@@ -33,7 +33,7 @@ public class FirstTest extends WebDriverSettings {
         loginPage.Password("123qwe123aasd");
         loginPage.submitForm();
         loginPage.getText();
-        Assert.assertTrue(loginPage.getText().equals("Пожалуйста, введите пароль."));
+        Assert.assertTrue(loginPage.getText().equals("Пожалуйста, подтвердите, что вы не робот."));
     }
     @Test
     public void regFailureTest(){
